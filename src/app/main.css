@@ -1,0 +1,446 @@
+@import url("https://www.johnlewis.com/static/core/css/jlp-styles-2.css");
+
+body {
+  background-color: #fbf4e7;
+}
+
+body div:focus {
+  outline: none !important;
+}
+
+main {
+  padding-bottom: 56px;
+  padding-top: 48px;
+}
+
+.content {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.content-left {
+  background: #fff;
+  margin: 0 auto;
+  max-width: 700px;
+  width: calc(100% - 20px);
+}
+
+.payment-titleContainer h2 {
+  background-color: #fff;
+  border-bottom: 1px solid #cccccc;
+  padding: 16px 24px;
+  margin-bottom: 0;
+  color: #141414;
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: initial;
+  text-transform: none;
+}
+
+.terms-and-conditions {
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 0;
+  color: #141414;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 22px;
+}
+
+.payment-container {
+  padding: 16px 24px 24px;
+}
+
+.container {
+  margin-bottom: 8px;
+}
+
+.billing-address--has-divider {
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  position: relative;
+}
+
+.billing-address {
+  margin-bottom: 16px;
+}
+
+.billing-address--has-divider::after {
+  background: #000;
+  bottom: 0;
+  content: "";
+  height: 1px;
+  left: -16px;
+  position: absolute;
+  width: calc(100% + 32px);
+}
+
+.billing-address h3 {
+  display: inline-block;
+  color: #141414;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: normal;
+  line-height: 22px;
+  margin-top: 0;
+  text-transform: none;
+  margin-bottom: 8px;
+  width: auto;
+}
+
+.wrapper {
+  border: 1px solid #000;
+  border-top: 0;
+  margin-bottom: -1px;
+  padding: 16px;
+}
+
+.container .wrapper {
+  display: none;
+}
+
+.container.active .wrapper {
+  display: block;
+}
+
+.helperMessage {
+  display: block;
+  margin-top: 8px;
+}
+
+.errorMessage {
+  color: #db003e;
+  display: block;
+  font-family: GillSansforJL, Gill Sans, Gill Sans MT, GillSansMTStd-Medium,
+    Avenir, Corbel, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 22px;
+}
+
+.errorMessage {
+  margin-top: 8px;
+}
+
+.fieldContainer {
+  display: flex;
+  width: 100%;
+}
+
+.fieldContainer:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.inputElement {
+  border: 1px solid #7f7f7f;
+  border-radius: 2px;
+  height: 48px;
+  padding: 0 12px;
+  width: 100%;
+}
+
+.inputElement::placeholder {
+  font-family: GillSansforJL, Gill Sans, Gill Sans MT, GillSansMTStd-Medium,
+    Avenir, Corbel, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 22px;
+}
+
+.inputElement:hover:not(.inputElementInvalid) {
+  border-color: #141414;
+  border-radius: 4px;
+  transition: border-radius 120ms ease-out, border-color 120ms;
+}
+
+.inputElement.inputElement:focus,
+.inputElementFocus:not(.inputElementInvalid) {
+  border-color: #141414;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 1px #141414;
+  outline: none;
+}
+
+.inputElementInvalid {
+  border-color: #cc1426;
+}
+
+.inputElementInvalid:focus {
+  box-shadow: inset 0 0 0 1px #cc1426;
+}
+
+.inputWrapper {
+  width: 33.33333%;
+}
+
+.inputWrapper.fullWidth {
+  width: 100%;
+}
+
+.inputWrapper + .inputWrapper {
+  margin-left: 24px;
+}
+
+.paymentElement {
+  margin-bottom: spacing(0.5);
+  max-width: 590px;
+  margin: 0 auto;
+}
+
+/* Label */
+.labelContainer {
+  margin-bottom: 8px;
+}
+
+label {
+  color: #141414;
+  font-family: GillSansforJL, Gill Sans, Gill Sans MT, GillSansMTStd-Medium,
+    Avenir, Corbel, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 22px;
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  box-shadow: none;
+  display: block;
+  margin-left: auto !important;
+  width: 100%;
+  min-height: 48px;
+  background: #141414;
+  border-radius: 2px;
+  border: 0;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  padding-left: 12px;
+  padding-right: 12px;
+  text-align: center;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #1db954;
+  border-radius: 4px;
+  color: #141414;
+  transition: border-radius 0.12s linear, background-color 0.12s linear,
+    border-color 0.12s linear, box-shadow 0.12s linear, color 0.12s linear;
+}
+
+.button:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.button:disabled {
+  background-color: #cccccc;
+  border-radius: 4px;
+  color: #7f7f7f;
+  cursor: default;
+}
+
+.card-container {
+  margin-bottom: 8px;
+}
+
+.googlepay-container button {
+  width: 100%;
+}
+
+.radio-button--container {
+  border: 1px solid #d8d8d8;
+  position: relative;
+}
+
+.container.active .radio-button--container {
+  border-color: #000;
+}
+
+.radio-button--label {
+  align-items: center;
+  background: #fff;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  height: 62px;
+  justify-content: space-between;
+  outline: none !important;
+  padding: 20px 20px 20px 50px;
+  position: relative;
+  width: 100%;
+}
+
+.radio-button--label img {
+  display: none;
+  max-width: 130px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .radio-button--label img {
+    display: block;
+  }
+}
+
+.radio-button--input {
+  border: 1px solid #7f7f7f;
+  border-radius: 100%;
+  height: 20px;
+  left: 16px;
+  position: absolute;
+  top: calc(50% - 10px);
+  transition: border 0.4s ease;
+  width: 20px;
+}
+
+.radio-button--input::after {
+  background: #000;
+  border-radius: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 0;
+  height: 0;
+  transition: height 0.2s ease, width 0.2s ease;
+}
+
+.container.active .radio-button--container .radio-button--input,
+.radio-button--label:hover .radio-button--input {
+  border-color: #000;
+}
+
+.container.active .radio-button--container .radio-button--input::after {
+  width: 12px;
+  height: 12px;
+}
+
+.order-totals {
+  display: flex;
+  color: #141414;
+  letter-spacing: normal;
+  margin-top: 0;
+  margin-bottom: 8px;
+  text-transform: none;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.order-totals-basket-totals {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.order-totals-balance {
+  border-top: 1px solid #d8d8d8;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  padding-top: 16px;
+}
+
+.order-totals_basketTotals {
+  font-weight: 700;
+}
+
+.order-totals_outstandingBalanceLabel {
+  color: #141414;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 28px;
+  margin-top: 0;
+}
+
+.tabs {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.tab {
+  display: none;
+}
+
+.tab.active {
+  display: block;
+}
+
+.tabs li {
+  width: 100%;
+}
+
+.tab-button {
+  background-color: #f3f3f3;
+  border: 0;
+  border-top: 6px solid #f3f3f3;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: normal;
+  line-height: 22px;
+  margin-top: 30px;
+  outline: none !important;
+  padding: 10px 24px 16px;
+  width: 100%;
+}
+
+.tab-button.active {
+  background: #fff;
+  border-color: #1db954;
+}
+
+/* Message */
+.message {
+  background-color: #fff9ec;
+  border-left: 4px solid #ffb017;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 24px;
+  padding: 16px 12px;
+}
+
+.message__content {
+  padding-left: 12px;
+}
+
+.message__title {
+  color: #141414;
+  font-size: 16px;
+  letter-spacing: normal;
+  line-height: 22px;
+  margin-top: 0;
+  font-weight: 700;
+  margin-bottom: 0;
+  text-transform: none;
+}
+
+.message__body {
+  margin-top: 8px;
+  font-weight: 400;
+  color: #141414;
+  font-size: 16px;
+  letter-spacing: normal;
+  line-height: 22px;
+}
+
+.message__body p {
+  margin: 0;
+}
